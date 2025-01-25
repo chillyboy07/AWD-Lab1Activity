@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWD-Lab1Act</title>
+    <link rel="stylesheet" href="../page1/assets/css/style.css">
+</head>
+<body>
+    <div id="background-image"></div> <!-- background image -->
+    <div id="header">
+        <h1>Guess the League of Legends Champion!</h1>
+    </div>
+
+    <div class="content-box"> <!-- content box -->
+        <div id="content">
+            <p>Guess which champion we're thinking of from the list below:</p>
+            <ul id="champion-list">
+                <p>4 guesses only!</p>
+                <li>Aatrox</li>
+                <li>Ahri</li>
+                <li>Garen</li>
+                <li>Lux</li>
+                <li>Yasuo</li>
+            </ul>
+
+            <input type="text" id="guess-input" required placeholder="Enter champion name"> <!-- input field -->
+            <button onclick="checkGuess()">Submit Guess</button>
+
+            <div id="result"></div>
+            <div id="guess-history"></div>
+        </div>
+        <a href="../../index.html"> <!-- link to landing page -->
+            <button id="random-pick-button">Back to Landing Page</button>
+        </a>
+    </div>
+
+    <script src="../page1/assets/js/script.js"></script>
+</body>
+</html>
